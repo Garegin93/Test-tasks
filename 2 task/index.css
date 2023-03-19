@@ -1,0 +1,483 @@
+@font-face {
+    font-family: "inter-regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/inter-regular.woff2") format("woff2"),
+    url("/fonts/inter-regular.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "inter-medium";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/inter-medium.woff2") format("woff2"),
+    url("/fonts/inter-medium.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "inter-black";
+    font-style: normal;
+    font-weight: 900;
+    src: url("/fonts/inter-black.woff2") format("woff2"),
+    url("/fonts/inter-black.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "inter-bold";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/inter-black.woff2") format("woff2"),
+    url("/fonts/inter-black.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/montserrat-regular.woff2") format("woff2"),
+    url("/fonts/montserrat-regular.woff") format("woff");
+    font-display: swap;
+}
+
+html {
+    background: #1e1e1e;
+}
+
+.body {
+    font-family: "inter-regular", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    max-width: 1440px;
+    padding: 0;
+    margin: 0 auto;
+    background-image: url("/images/desktop_image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #e4e5ea;
+}
+
+.container {
+    padding: 46px 150px 0 150px;
+}
+
+.main,
+.nav__left-side,
+.nav__right-side,
+.main__left-side,
+.main__right-side,
+.nav,
+.about-company,
+.footer__container,
+.footer__left-side,
+.contacts,
+.socials-container,
+.menu-list,
+.footer__menu-container {
+    display: flex;
+}
+
+.nav {
+    margin: 0;
+    padding: 17px 0 0 0;
+    max-width: 1140px;
+    justify-content: center;
+    font-family: "inter-medium", sans-serif;
+    font-weight: 500;
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+}
+
+.menu__item:not(:nth-child(1)) {
+    margin-left: 30px;
+}
+
+.telegram {
+    margin-left: 18px;
+}
+
+.logo {
+    margin-right: 52px;
+    position: relative;
+    bottom: 8px;
+}
+
+.logo__description {
+    font-family: "montserrat", sans-serif;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 300;
+}
+
+.nav__left-side,
+.nav__right-side {
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.nav__right-side {
+    margin-left: auto;
+}
+
+.main {
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
+
+.main,
+.footer__container {
+    justify-content: space-between;
+}
+
+.main__left-side,
+.main__right-side,
+.about-company,
+.contacts {
+    flex-direction: column;
+}
+
+.main__left-side {
+    max-width: 362px;
+    position: relative;
+    top: -15px;
+}
+
+.for-painting-first,
+.for-painting-second {
+    color: transparent;
+    background-image: linear-gradient(90deg, #FCB045, #FF3F78);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.for-painting-first {
+    font-family: "inter-black", sans-serif;
+}
+
+.for-painting-second {
+    font-family: "inter-bold", sans-serif;
+    text-transform: uppercase;
+}
+
+.main__left-header {
+    font-size: 48px;
+    line-height: 58px;
+    margin: 0 0 30px 0;
+    font-weight: 400;
+}
+
+.main__left-description {
+    font-family: "montserrat", sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+}
+
+.main__right-side {
+    max-width: 300px;
+    text-align: right;
+}
+
+.main__right-header {
+    margin: 0 0 40px 0;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.main__right-features {
+    margin-bottom: 61px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.features__header {
+    margin: 0 0 6px 0;
+    font-size: 19px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.for-mobile,
+.second-list > a:first-child {
+    display: none;
+}
+
+.features__description {
+    margin: 0;
+    font-family: "montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.btn-consultation {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 21px 35px;
+    width: 261px;
+    background-color: #4077f3;
+    border: none;
+    margin-left: auto;
+    color: inherit;
+    cursor: pointer;
+}
+
+.footer {
+    padding-top: 55px;
+    padding-bottom: 20px;
+}
+
+.footer__container {
+    margin-bottom: 33px;
+}
+
+.about-company {
+    margin-right: 98px;
+}
+
+.about-company__header,
+.menu-list__header,
+.contacts__header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #656566;
+    text-transform: uppercase;
+    margin: 0 0 18px 0;
+}
+
+.links,
+.menu__link {
+    color: #e4e5ea;
+    text-decoration: none;
+}
+
+.links:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.menu-list {
+    flex-direction: column;
+}
+
+.first-list {
+    margin-right: 52px;
+}
+
+.second-list {
+    margin-top: 35px;
+}
+
+.footer__right-side {
+    text-align: right;
+}
+
+.contact__link,
+.contact__phone {
+    color: #e4e5ea;
+    text-decoration: none;
+}
+
+.contact__link:not(:first-child) {
+    margin-left: 10px;
+}
+
+.socials-container {
+    margin: 18px 0;
+    justify-content: flex-end;
+}
+
+.contact__address {
+    font-style: normal;
+}
+
+.rights {
+    text-align: right;
+}
+
+.rights__description {
+    margin: 0 0 5px 0;
+}
+
+.rights__link {
+    color: #e4e5ea;
+}
+
+.rights {
+    font-family: "montserrat", sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+@media screen and (max-width: 426px) {
+    .body {
+        background-color: #0e1014;
+        background-image: none;
+    }
+
+    .container,
+    .nav {
+        padding: 0;
+    }
+
+    .logo,
+    .nav__right-side,
+    .features__description,
+    .btn-consultation,
+    .features > div:nth-child(1),
+    .features > div:nth-child(4),
+    .second-list > a:nth-child(3),
+    .nav__left-side > li:last-child {
+        display: none;
+    }
+
+    .nav__left-side {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .menu__item {
+        font-size: 12px;
+        line-height: 14px;
+        text-transform: uppercase;
+    }
+
+    .menu__item:not(:nth-child(1)) {
+        margin-left: 0;
+    }
+
+    .menu__link {
+        display: block;
+        padding: 16px 8px;
+    }
+
+    .main {
+        flex-direction: column;
+        background-image: url(/images/mobile_desktop.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 40px 14px 60px;
+        background-position: center;
+    }
+
+    .main__right-side,
+    .footer__right-side,
+    .rights {
+        text-align: left;
+    }
+
+    .main__right-header {
+        margin-bottom: 45px;
+    }
+
+    .main__right-features {
+        margin-bottom: 0;
+    }
+
+    .main__left-side {
+        top: 0;
+        margin-bottom: 45px;
+    }
+
+    .main__left-header {
+        font-size: 36px;
+        line-height: 43px;
+        margin-bottom: 15px;
+    }
+
+    .features {
+        grid-template-columns: repeat(2, max-content);
+        row-gap: 10px;
+        column-gap: 14px;
+    }
+
+    .features > div:nth-child(3) {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .features > div:nth-child(2) {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .features__header {
+        margin: 0;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+        padding-left: 15px;
+        position: relative;
+    }
+
+    .features__header:before {
+        content: "";
+        position: absolute;
+        background-image: url("/images/line.png");
+        display: block;
+        left: 0;
+        top: 8px;
+        width: 10px;
+        height: 2px;
+    }
+
+    .for-mobile,
+    .second-list > a:first-child {
+        display: block;
+    }
+
+    .footer {
+        padding: 45px 15px 60px;
+    }
+
+    .footer__container,
+    .footer__left-side {
+        flex-direction: column;
+    }
+
+    .first-list {
+        margin-right: 40px;
+    }
+
+    .about-company {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .about-company__header,
+    .menu-list__header,
+    .contacts__header {
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 20px;
+    }
+
+    .links,
+    .contact__address {
+        font-size: 14px;
+    }
+
+    .footer__left-side {
+        margin-bottom: 30px;
+    }
+
+    .socials-container {
+        justify-content: flex-start;
+    }
+
+    .for-painting-second {
+        text-transform: none;
+    }
+}
